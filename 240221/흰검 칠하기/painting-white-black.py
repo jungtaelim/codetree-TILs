@@ -1,5 +1,3 @@
-from collections import deque
-
 N = int(input())
 
 M = [[0 for i in range(200002)] for j in range(2)]
@@ -14,8 +12,6 @@ for i in range(N):
             M[0][x] = 1
             M[1][x] += 1
             x = x + 1
-            
-
         elif b == 'L':
             M[0][x] = -1
             M[1][x] += 1
@@ -23,12 +19,13 @@ for i in range(N):
     if b == 'R':
         x = x - 1
     elif b == 'L':
-        x = x + 1    
+        x = x + 1
+
 B = 0
 W = 0
 G = 0
-for i in range(200001):
-    if M[1][i] > 3:
+for i in range(200002):
+    if M[1][i] >= 4:
         G += 1
     elif M[0][i] == 1:
         B += 1
