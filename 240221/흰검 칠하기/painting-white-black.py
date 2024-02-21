@@ -2,9 +2,9 @@ from collections import deque
 
 N = int(input())
 
-M = [[0 for i in range(200001)] for j in range(2)]
+M = [[0 for i in range(200002)] for j in range(2)]
 
-x = 100000
+x = 100001
 
 for i in range(N):
     a, b = input().split()
