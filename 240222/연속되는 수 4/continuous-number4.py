@@ -1,7 +1,7 @@
 N = int(input())
 
 count = 0
-max1 = 0
+max1 = 1
 for i in range(N):
     cur = int(input())
     if i == 0:
