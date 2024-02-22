@@ -7,6 +7,7 @@ for i in range(N):
     if i == 0:
         be = cur
         count += 1
+        max1 = 1
         continue
 
     if be == cur:
