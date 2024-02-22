@@ -13,6 +13,8 @@ for i in range(N):
     if be == cur:
         count += 1
         be = cur
+        if count > max1:
+            max1 = count
         continue
 
     else:
