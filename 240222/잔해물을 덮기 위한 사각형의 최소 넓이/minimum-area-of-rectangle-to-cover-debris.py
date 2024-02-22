@@ -9,8 +9,8 @@ for i in range(2):
             for k in range(MM+b,MM+d+1):
                 M[j][k] = 1
     else:
-        for j in range(MM+a,MM+c+1):
-            for k in range(MM+b,MM+d+1):
+        for j in range(MM+a,MM+c):
+            for k in range(MM+b,MM+d):
                 M[j][k] = 0
 Hx = -2*MM+1
 Hy = -2*MM+1
