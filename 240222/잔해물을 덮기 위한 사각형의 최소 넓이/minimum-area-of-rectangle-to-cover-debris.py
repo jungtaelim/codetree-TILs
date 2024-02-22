@@ -5,8 +5,8 @@ M = [[0 for i in range(2*MM+1)] for j in range(2*MM+1)]
 for i in range(2):
     a,b,c,d = map(int, input().split())
     if i == 0:
-        for j in range(MM+a,MM+c+1):
-            for k in range(MM+b,MM+d+1):
+        for j in range(MM+a,MM+c):
+            for k in range(MM+b,MM+d):
                 M[j][k] = 1
     else:
         for j in range(MM+a,MM+c):
@@ -34,6 +34,6 @@ for i in range(MM*2+1):
                 flag = True
 
 if flag:
-    print(abs(Hx-Lx)*abs(Hy-Ly))
+    print(abs(Hx+1-Lx)*abs(Hy+1-Ly))
 else:
     print(0)
