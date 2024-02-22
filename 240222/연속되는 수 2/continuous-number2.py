@@ -18,8 +18,6 @@ for i in range(N):
         continue
 
     else:
-        if count > max1:
-            max1 = count
             count = 1
             be = cur
             continue
