@@ -20,6 +20,7 @@ while q:
         if 0 <= x + a < N and 0 <= y + b < N:
             if V[x + a][y + b] < V[x][y] + M[x + a][y + b]:
                 V[x + a][y + b] = V[x][y] + M[x + a][y + b]
-                q.appendleft((x + a, y + b))
+                if V[x+a][y+b]!=0:
+                    q.appendleft((x + a, y + b))
 
 print(V[N - 1][N - 1])
