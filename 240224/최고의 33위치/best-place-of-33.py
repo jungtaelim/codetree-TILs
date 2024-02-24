@@ -12,7 +12,7 @@ for i in range(N):
             sum1 = 0
             for k in range(3):
                 for w in range(3):
-                    sum1 = sum1 + M[i+k][i+w]
+                    sum1 = sum1 + M[i+k][j+w]
             if sum1 > max1:
                 max1 = sum1
 
