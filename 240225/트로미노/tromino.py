@@ -14,11 +14,11 @@ for i in range(R):
             sum1 = sum1 + M[i][j]+ M[i+1][j]+ M[i][j+1]+M[i+1][j+1] - min(M[i][j], M[i+1][j], M[i][j+1], M[i+1][j+1])
             max1 = max(max1, sum1)
 
-        if i+2<R-1:
+        if i+2<R:
             sum1 = 0
             max1 = max(max1, M[i][j] + M[i+1][j] + M[i+2][j])
         
-        if j+2<C-1:
+        if j+2<C:
             sum1 = 0
             max1 = max(max1, M[i][j] + M[i][j+1] + M[i][j+2])
 
