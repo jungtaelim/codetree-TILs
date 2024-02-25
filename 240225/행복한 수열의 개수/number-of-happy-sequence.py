@@ -19,7 +19,9 @@ for i in range(N):
             if count >= A:
                 result += 1
                 break
-                
+        else:
+            count = 1
+
     count = 1
     for j in range(N-1):
         if M[j][i] == M[j+1][i]:
@@ -27,6 +29,8 @@ for i in range(N):
             if count >= A:
                 result += 1
                 break
+        else:
+            count = 1
 
 
 
