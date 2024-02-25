@@ -1,5 +1,9 @@
 N, A = map(int, input().split())
 
+if A == 1:
+    print(N*N)
+    exit()
+
 M = [[0 for i in range(N)] for j in range(N)]
 
 for i in range(N):
