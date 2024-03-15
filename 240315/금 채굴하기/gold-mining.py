@@ -14,10 +14,11 @@ for i in range(n):
     M[i] = list(map(int, input().split()))
 
 max1 = 0
+
 for k in range(n + 1):
     for row in range(n):
         for col in range(n):
-            if count_gold(row, col, k) * m - (k * k + (k + 1) * (k + 1)) > 0:
+            if count_gold(row, col, k) * m - (k * k + (k + 1) * (k + 1)) >= 0:
                 if max1 < count_gold(row, col, k):
                     max1 = count_gold(row, col, k)
 print(max1)
