@@ -19,7 +19,7 @@ int summ(int r, int c, int k, int l) {
             y += dir_y[i];
             x += dir_x[i];
 
-            if (x<0 or y<0 or x>n or y>n) {
+            if (x<0 or y<0 or x>n-1 or y>n-1) {
                 return 0;
             }
 
