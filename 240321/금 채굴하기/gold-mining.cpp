@@ -41,7 +41,7 @@ int main() {
 
     for (int row = 0; row < n; row++) {
         for (int col = 0; col < n; col++) {
-            for (int k = 0; k < 2 * (n - 1); k++) {
+            for (int k = 0; k < 2 * (n - 1)+1; k++) {
                 int a = how_much(row, col, k);
 
                 if (a*m >= fee(k)) {
