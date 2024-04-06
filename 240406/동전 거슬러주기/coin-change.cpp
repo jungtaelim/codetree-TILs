@@ -1,13 +1,13 @@
 #include<iostream>
-int A[100];
-int B[100];
+int A[100000];
+int B[100000];
 using namespace std;
 
 int main() {
 
 	int N, M;
 	cin >> N >> M;
-	for (int i = 0; i < 100; i++) {
+	for (int i = 0; i < 100000; i++) {
 		B[i]=100000;
 	}
 	for (int i = 0; i < N; i++) {
