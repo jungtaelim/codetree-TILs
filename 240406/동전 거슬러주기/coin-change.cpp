@@ -28,7 +28,7 @@ int main() {
 		}
 	}
 
-	if (B[M] == -1) {
+	if (B[M] == 100000) {
 		cout << -1;
 	}
 	else {
