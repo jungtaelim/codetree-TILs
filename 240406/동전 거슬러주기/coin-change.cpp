@@ -28,9 +28,12 @@ int main() {
 		}
 	}
 
-
-	cout << B[M];
-
+	if (B[M] == -1) {
+		cout << -1;
+	}
+	else {
+		cout << B[M];
+	}
 
 
 }
