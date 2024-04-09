@@ -25,6 +25,6 @@ int main() {
 		}
 	}
 	
-	cout << dp[n];
+	cout << dp[n]%10007;
 
 }
